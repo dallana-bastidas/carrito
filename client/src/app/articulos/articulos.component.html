@@ -1,0 +1,28 @@
+<!-- <div class="p-4 border rounded-lg">
+  <h2 class="text-2xl font-bold mb-4">Artículos</h2>
+  <div class="flex justify-between items-center mb-2">
+    <ul>
+      <li> bici -3.000
+        <button> compra</button>
+      </li>
+
+      <li> TV - 2.500 <button> compra</button></li>
+      <li>Libro - 320 <button> compra</button></li>
+      <li> Celular - 1.000 <button> compra</button></li>
+      <li> portatil - 2.000 <button> compra</button></li>
+      <li> teclado - 4.000 <button> compra</button></li>
+      <li> audifonos - 5.000 <button> compra</button></li>
+    </ul>
+
+  </div>
+</div> -->
+
+<div class="p-4 border rounded-lg">
+  <h2 class="text-2xl font-bold mb-4">Artículos</h2>
+  <div *ngFor="let item of companies; let i= index" class="flex justify-between items-center mb-2">
+    <td>{{i}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.precio}}</td>
+    <button (click)="agregar(item)" class="bg-blue-500 text-white px-3 py-1 rounded">Comprar</button>
+  </div>
+</div>
