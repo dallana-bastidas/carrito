@@ -1,9 +1,10 @@
+import { NgFor } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-articulos',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './articulos.component.html',
   styleUrl: './articulos.component.css',
 })

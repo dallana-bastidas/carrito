@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-carrito',
   standalone: true,
-  imports: [],
+  imports: [
+    NgFor
+  ],
   templateUrl: './carrito.component.html',
   styleUrl: './carrito.component.css'
 })
